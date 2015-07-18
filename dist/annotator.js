@@ -898,6 +898,7 @@ var Annotator = (function Annotator() {
                 } else if (elm.hasAttribute('class')) { 
                     segs.unshift(elm.localName.toLowerCase() + '[@class="' + elm.getAttribute('class') + '"]'); 
                 } else { 
+                    var i,sib; 
                     for (i = 1, sib = elm.previousSibling; sib; sib = sib.previousSibling) { 
                         if (sib.localName == elm.localName)  i++; 
                     }; 
