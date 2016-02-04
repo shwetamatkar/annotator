@@ -371,7 +371,8 @@ var Annotation = (function Annotation() {
             temporary
             .removeClass("temporary")
             .addClass("annotation")
-            .addClass(this.color);
+            .addClass(this.color)
+            .css("background-color", this.color);/* for custom colors*/
 
         }
 
